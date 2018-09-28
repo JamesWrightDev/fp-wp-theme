@@ -1,0 +1,221 @@
+/*
+Theme Name: Fp
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: James Wright
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/* Gloabals */
+.container-fluid{
+    max-width: 900px;
+    margin: 0 auto;
+    
+    
+}
+
+/*Typography*/
+.display-1{
+    font-family: 'Arapey', serif;
+    font-style: italic;
+    position: relative;
+    top: 60px;
+    line-height: 0.9;
+    font-size: 8em;
+    padding-top: 100px;
+    z-index: 99;
+}
+
+.sub-heading{
+    font-family: 'roboto mono', serif;
+    
+    font-size: 2.5em;
+}
+
+.h4,
+.sidenav a{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center
+
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16;
+}
+
+.h5{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+}
+
+.copy{
+    margin: 100px 0 ;
+    text-decoration: underline;
+}
+
+.project-title{
+    margin-bottom: 35px;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+/*Graphics*/
+
+.graphic{
+    width: 50%;
+    height: 240px;
+    position: absolute;
+    background-color: #89F3CD;
+    top: 135px;
+    left: 220px;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+
+
+.graphic-project{
+    width: 45vw;
+    height: 280px;
+    position: absolute;
+    background-color: #E7B79B;
+    top: 35px;
+    left: 220px;
+    overflow: hidden;
+
+}
+
+
+.tagline-box{
+    background-color:#FB6A6A;
+    padding: 20px 20px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+
+}
+
+
+
+.arrow{
+    margin: 0 auto;
+    align-items: column;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.hello{
+    color: red;
+}
+
+.project-side{
+    border-right: solid 2px black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* The side navigation menu */
+.hamburger{
+    position: fixed;
+    top:0px;
+    left: 20px;
+    font-size:45px;
+    cursor:pointer;
+    background-color: white;
+    z-index: 10;
+    padding-right: 40%;
+    padding-bottom: 10px;   
+    overflow: hidden;
+    z-index: 100;
+
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #FB6A6A; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 24px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #A0A0A0;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (max-width: 450px){
+    .display-1{
+        font-size: 6em;
+    
+    }
+    .graphic{
+        height:160px;
+        top:170px;
+        left:200px;
+        width: 30%;
+    }
+} 
